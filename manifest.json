@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-random-names",
 	"name": "Random names",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "Generates random names",
 	"author": "Tom Parker-Shemilt",
