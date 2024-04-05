@@ -16,7 +16,8 @@
 			"eslint",
 			"prettier --write"
 		],
-		"*.json": "prettier --write"
+		"*.json": "prettier --write",
+		"*.yaml": "prettier --write"
 	},
 	"keywords": [],
 	"author": "",
