@@ -24,6 +24,9 @@ const walk = (dir: string) => {
 const output = fs.openSync("allgenerators.ts", "w");
 fs.writeSync(output, "// Generated file\n");
 
+const ts_index = fs.openSync("index.d.ts", "w");
+fs.writeSync(ts_index, "// Generated file\n");
+
 const choices: { [key: string]: { [key: string]: string } } = {};
 const items = walk(rootName);
 items.forEach((item) => {
@@ -36,6 +39,13 @@ items.forEach((item) => {
 		`import ${import_name} from '@xaroth8088/random-names/generators/${item[0]}/${item[1]}.mjs';\n`,
 	);
 	choices[item[0]][item[1]] = import_name;
+
+	fs.writeSync(
+		ts_index,
+		`declare module '@xaroth8088/random-names/generators/${item[0]}/${item[1]}.mjs' {
+		export default function output(): string;
+	}\n`,
+	);
 });
 fs.writeSync(
 	output,
@@ -51,3 +61,4 @@ _.keys(choices).forEach((first) => {
 fs.writeSync(output, `};\n`);
 
 fs.closeSync(output);
+fs.closeSync(ts_index);

@@ -2,3 +2,4 @@ node_modules
 main.js
 .downloads
 allgenerators.ts
+index.d.ts
