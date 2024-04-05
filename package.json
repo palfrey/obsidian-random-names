@@ -1,5 +1,5 @@
 {
-	"name": "obsidian-random-names",
+	"name": "random-names",
 	"version": "0.0.2",
 	"description": "Generates random names",
 	"main": "main.js",
