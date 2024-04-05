@@ -4,11 +4,12 @@ This is a plugin for [Obsidian](https://obsidian.md) that will insert random nam
 
 ## How to use
 
-- Clone this repo.
-- Make sure your NodeJS is at least v16 (`node --version`).
-- `./pnpm i` to install dependencies.
-- `./pnpm dev` to start compilation in watch mode.
+1. Clone this repo.
+2. Make sure your NodeJS is at least v16 (`node --version`).
+3. `./pnpm i` to install dependencies.
+4. `./pnpm dev` to start compilation in watch mode.
 
 ## Manually installing the plugin
 
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-random-names/`.
+1. Run `./pnpm build`
+2. Copy over `main.js` and `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-random-names/`.
