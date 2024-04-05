@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"name": "obsidian-random-names",
+	"version": "0.0.1",
+	"description": "Generates random names",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -10,15 +10,16 @@
 	},
 	"keywords": [],
 	"author": "",
-	"license": "MIT",
+	"license": "AGPL-3.0-only",
 	"devDependencies": {
-		"@types/node": "^16.11.6",
-		"@typescript-eslint/eslint-plugin": "5.29.0",
-		"@typescript-eslint/parser": "5.29.0",
+		"@types/node": "^20.12.4",
+		"@typescript-eslint/eslint-plugin": "7.5.0",
+		"@typescript-eslint/parser": "7.5.0",
 		"builtin-modules": "3.3.0",
-		"esbuild": "0.17.3",
-		"obsidian": "latest",
-		"tslib": "2.4.0",
-		"typescript": "4.7.4"
+		"esbuild": "0.20.2",
+		"obsidian": "1.5.7-1",
+		"tslib": "2.6.2",
+		"typescript": "5.4.4",
+		"@xaroth8088/random-names": "1.1.2"
 	}
 }
