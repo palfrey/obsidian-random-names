@@ -7,7 +7,16 @@
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
-		"postinstall": "ts-node generate-names.ts"
+		"postinstall": "ts-node generate-names.ts",
+		"eslint": "eslint .",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.ts": [
+			"eslint",
+			"prettier --write"
+		],
+		"*.json": "prettier --write"
 	},
 	"keywords": [],
 	"author": "",
@@ -20,8 +29,11 @@
 		"@xaroth8088/random-names": "1.1.2",
 		"builtin-modules": "3.3.0",
 		"esbuild": "0.20.2",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
 		"lodash": "^4.17.21",
 		"obsidian": "1.5.7-1",
+		"prettier": "^3.2.5",
 		"ts-node": "^10.9.2",
 		"tslib": "2.6.2",
 		"typescript": "5.4.4"
