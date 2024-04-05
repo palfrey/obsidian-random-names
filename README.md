@@ -13,3 +13,10 @@ This is a plugin for [Obsidian](https://obsidian.md) that will insert random nam
 
 1. Run `./pnpm build`
 2. Copy over `main.js` and `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-random-names/`.
+
+# Releasing
+
+1. Update the version in `package.json`
+2. `./pnpm run version` and commit the changes
+3. Create an annotated tag (e.g. `git tag -a 1.0.1 -m "1.0.1"`)
+4. Goto github, [wait for the new release](https://github.com/palfrey/obsidian-random-names/releases), and then mark it as published.
