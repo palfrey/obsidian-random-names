@@ -5,7 +5,7 @@
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
-		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"build": "tsc -noEmit -skipLibCheck && ts-node esbuild.config.ts production",
 		"version": "ts-node version-bump.ts && git add manifest.json versions.json",
 		"postinstall": "ts-node generate-names.ts",
 		"eslint": "eslint .",
