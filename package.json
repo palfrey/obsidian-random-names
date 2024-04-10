@@ -4,7 +4,7 @@
 	"description": "Generates random names",
 	"main": "main.js",
 	"scripts": {
-		"dev": "node esbuild.config.mjs",
+		"dev": "ts-node esbuild.config.ts",
 		"build": "tsc -noEmit -skipLibCheck && ts-node esbuild.config.ts production",
 		"version": "ts-node version-bump.ts && git add manifest.json versions.json",
 		"postinstall": "ts-node generate-names.ts",
