@@ -40,7 +40,7 @@ export default class RandomNames extends Plugin {
 					.sort()
 					.forEach((second) => {
 						this.addCommand({
-							id: `random-names-${first}-${second}`,
+							id: `${first}-${second}`,
 							name: `Insert name (${toPretty(first)} - ${toPretty(second)})`,
 							editorCallback: (
 								editor: Editor,
