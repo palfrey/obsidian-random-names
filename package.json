@@ -1,6 +1,6 @@
 {
 	"name": "random-names",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"description": "Generates random names",
 	"main": "main.js",
 	"scripts": {
